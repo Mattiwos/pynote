@@ -31,11 +31,13 @@ class Pynote:
 				json.dump(self.data,write_notes,indent=2)
 				
 	def listnotes(self):
-		with open(self.datafile, "r", encoding='utf-8') as read_notes:
-			self.data = json.load(read_notes);
-			for i in range(len(self.data)-1):
-			 	print(self.data[i])
+		with open(self.datafile, "r") as self.read_notes:
+			self.data = json.load(self.read_notes);
+			for i in range(len(self.data)-2):
+			 	print( "List: {}".format(self.data[i:i+1]) )
 
+	def deletenote(self):
+		pass
 
 if __name__ == '__main__':
 	foo = Pynote()
@@ -44,4 +46,6 @@ if __name__ == '__main__':
 	if sys.argv[1] == "-a":	
 		foo.addnote(sys.argv[1:]); 
 	if sys.argv[1] == "-l":	
+		foo.listnotes(); 
+	if sys.argv[1] == "-d":	
 		foo.listnotes(); 
