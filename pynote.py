@@ -33,8 +33,8 @@ class Pynote:
 	def listnotes(self):
 		with open(self.datafile, "r") as self.read_notes:
 			self.data = json.load(self.read_notes);
-			for i in range(len(self.data)-2):
-			 	print( "List: {}".format(self.data[i:i+1]) )
+			for i in (self.data):
+			 	print(self.data[i])
 
 	def deletenote(self):
 		pass
