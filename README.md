@@ -12,7 +12,7 @@ python3 pynote.py -a finish commiting readmefile
 python3 pynote.py -l 
 ```
 
-## Delte Note 
+## Delete Note 
 Not complete
 ```bash
 python3 pynote.py -d ???
