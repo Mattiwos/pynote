@@ -7,7 +7,8 @@ python3 pynote.py -a finish commiting readmefile
 
 ```  
 
-## Lists Note in terminal
+## Lists Note 
+Lists all the notes in JSON formate
 ```bash
 python3 pynote.py -l 
 ```
